@@ -10,11 +10,12 @@ module p1;
 
   var logic a;
   logic b;
+  initial begin
+    #50;
 
-  # 50
+    a = 0;
+    b = 0;
 
-  a = 0;
-  b = 0;
-
-  #10 $finish;
+    #10 $finish;
+  end
 endmodule;
